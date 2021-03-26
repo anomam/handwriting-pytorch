@@ -1,0 +1,1 @@
+Data from training and generated examples will be logged into this folder.

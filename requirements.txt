@@ -1,0 +1,6 @@
+# python 3.8
+tqdm
+typer
+matplotlib
+loguru
+torch==1.7.1+cu101 -f https://download.pytorch.org/whl/torch_stable.html

@@ -1,0 +1,9 @@
+*.pyc
+__pycache__/*
+.DS_Store
+data/data_raw/lineStrokes
+data/data_np_offsets/*.npy
+log/*.json
+.vscode
+log/plots/*
+log/estimators/*
