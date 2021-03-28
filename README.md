@@ -1,10 +1,9 @@
 # Handwriting with Pytorch
 
-![alignment_01](https://github.com/anomam/handwriting/blob/main/log/plots/example_generated_01.png?raw=true)
+![alignment_01](https://raw.githubusercontent.com/anomam/handwriting-pytorch/main/log/plots/example_generated_01.png)
 
 This is my implementation attempt of [this amazing paper](https://arxiv.org/abs/1308.0850) from Alex Graves, using Pytorch.  
 So far I've only implemented the unconditional handwriting generation part, but I'll add the conditional generation one as soon as I can.
-
 
 ## How to
 
@@ -18,7 +17,6 @@ pip install -r requirements.txt
 
 You might need to adjust the pytorch version to your local setup though (CUDA version, ...): see this Pytorch installation [matrix](https://pytorch.org/get-started/locally/) for help.
 
-
 ### See all the available commands
 
 Simply use:
@@ -27,14 +25,11 @@ Simply use:
 python cli.py --help
 ```
 
-
 ### Train the LSTM network
-
 
 #### Data download
 
-The raw data needs to be downloaded from the [official database](http://www.iam.unibe.ch/fki/databases/iam-on-line-handwriting-database) into this folder: `data/data_raw/` 
-
+The raw data needs to be downloaded from the [official database](http://www.iam.unibe.ch/fki/databases/iam-on-line-handwriting-database) into this folder: `data/data_raw/`
 
 #### Prepare data
 
@@ -45,7 +40,6 @@ python cli.py prepare-data
 ```
 
 It will convert the raw data into numpy arrays that can be easily loaded from the `data/data_np_offsets/` directory.
-
 
 #### Training
 
@@ -66,7 +60,7 @@ The saved model parameters as well as the in-training generated examples will be
 
 ### Generate examples
 
-Unconditional generation of examples can be done using: 
+Unconditional generation of examples can be done using:
 
 ```
 python cli.py generate
@@ -78,10 +72,9 @@ The generated results will be saved into `data/log/plots/`
 
 Generated examples with no conditioning on the text characters:
 
-![no_alignment](https://github.com/anomam/handwriting/blob/main/log/plots/example_generated_no_align.png?raw=true)
+![no_alignment](https://raw.githubusercontent.com/anomam/handwriting-pytorch/main/log/plots/example_generated_no_align.png)
 
-![alignment_01](https://github.com/anomam/handwriting/blob/main/log/plots/example_generated_01.png?raw=true)
-
+![alignment_01](https://raw.githubusercontent.com/anomam/handwriting-pytorch/main/log/plots/example_generated_01.png)
 
 ## Resources
 
